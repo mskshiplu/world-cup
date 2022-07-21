@@ -1,0 +1,101 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Heading */
+h1 {
+    font-size: 40px;
+    padding-left: 20px;
+}
+
+.top-news {
+    padding-bottom: 20px;
+}
+
+/* Navigation bar */
+.link-btn {
+    text-decoration: none;
+    color: white;
+    background-image: radial-gradient(blue, skyblue);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 400;
+    width: 140px;
+    text-align: center;
+}
+
+/* Animation */
+.link-btn:hover {
+    background-image: radial-gradient(rgba(255, 174, 0, 0.89), skyblue);
+    color: tomato;
+}
+
+.top-section {
+    display: flex;
+    margin-left: 95px;
+    margin-top: 60px;
+    background: #161616;
+    border-radius: 30px;
+    color: white;
+}
+
+.sub-section {
+    width: 50%;
+    padding: 2%;
+}
+
+.container {
+    margin: 100px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.644);
+    border-radius: 10px;
+}
+
+/* section upcoming */
+#sec1 {
+    display: flex;
+}
+
+.container-upcoming-match {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 10px;
+    justify-content: end
+}
+
+footer {
+    height: 250px;
+    text-align: center;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.671);
+    color: white;
+}
+
+nav li {
+    padding: 20px;
+}
+
+#goal {
+    font-size: 40px;
+}
+
+li {
+    display: inline;
+
+}
+
+/* Responsive code */
+@media screen and (max-width:600px) {
+    .container {
+        /* background-color: orange; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
